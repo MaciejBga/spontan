@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pojedynek impro stand-up</title>
+
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px auto;
+            width: 60%;
+        }
+
+        nav div {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        nav div:hover,
+        .active {
+            box-shadow: 0 0 3px 3px black;
+        }
+
+        .qf {
+            background-color: greenyellow;
+        }
+
+        .sf {
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            background-color: rosybrown;
+        }
+
+        .final {
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            background-color: royalblue;
+        }
+
+        .category {
+            position: absolute;
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* border: 2px solid black; */
+            font-family: arial;
+            font-size: 80px;
+            text-align: center;
+        }
+
+        button {
+            position: relative;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-80px);
+            width: 80px;
+            height: 40px;
+            border-radius: 10%;
+            background-color: darkred;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            line-height: 40px;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <div class="qf">1/4</div>
+        <div class="qf">1/4</div>
+        <div class="qf">1/4</div>
+        <div class="qf">1/4</div>
+        <div class="sf">1/2</div>
+        <div class="sf">1/2</div>
+        <div class="final">Finał</div>
+    </nav>
+    <div class="category">SPONTAN impro stand-up</div>
+    <button class="reset">Reset</button>
+    <button class="choice">Kategoria</button>
+
+    <script src="alternate.js"></script>
+</body>
+
+</html>
